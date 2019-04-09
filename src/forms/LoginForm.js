@@ -103,7 +103,8 @@ class LoginForm extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
-    fetch('http://localhost:5000/api/login', {
+    var proxyUrl = 'https://cors-anywhere.herokuapp.com/'
+    fetch(proxyUrl+'http://localhost:5000/api/login', {
       method: 'POST',
       headers: {
         Accept: 'application/json',

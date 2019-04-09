@@ -151,7 +151,8 @@ class RegisterForm extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
-    fetch('http://localhost:5000/api/register', {
+    var proxyUrl = 'https://cors-anywhere.herokuapp.com/'
+    fetch(proxyUrl+'http://localhost:5000/api/register', {
       method: 'POST',
       headers: {
         Accept: 'application/json',

@@ -36,7 +36,8 @@ class FanClub extends Component {
 
   handleChange = event => {
     event.preventDefault();
-    fetch('http://localhost:5000/api/lovespizza', {
+    var proxyUrl = 'https://cors-anywhere.herokuapp.com/'
+    fetch(proxyUrl+'http://localhost:5000/api/lovespizza', {
       method: 'PUT',
       headers: {
         Accept: 'application/json',

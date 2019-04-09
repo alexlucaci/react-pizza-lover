@@ -28,7 +28,8 @@ class TopVoters extends Component {
 
   }
   componentDidMount() {
-    fetch('http://localhost:5000/api/topvoters/10')
+    var proxyUrl = 'https://cors-anywhere.herokuapp.com/'
+    fetch(proxyUrl+'http://localhost:5000/api/topvoters/10')
     .then(results => {
       return results.json();
     }).then(data => {/*

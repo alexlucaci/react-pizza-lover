@@ -1,4 +1,4 @@
-# flask-rest-pizza-lover
+# react-pizza-lover
 
 Requirements: node > 8, npm
 
